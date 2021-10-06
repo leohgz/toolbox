@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="pref_token">my_token</string>
+    <string name="shared_pref">shareds</string>
+
+    <string name="loading" translatable="false">Please wait...</string>
+
+</resources>
