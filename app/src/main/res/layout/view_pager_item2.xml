@@ -8,16 +8,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         >
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background"
+            android:layout_height="match_parent"
             android:id="@+id/appcompatimg123"
-            android:adjustViewBounds="true"
-            />
+            android:scaleType="fitXY"            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +23,7 @@
             android:text="text 321"
             android:layout_gravity="center_horizontal"
             android:id="@+id/image_title"
-            android:layout_marginTop="-20dp"
+            android:layout_marginTop="6dp"
             />
     </LinearLayout>
 

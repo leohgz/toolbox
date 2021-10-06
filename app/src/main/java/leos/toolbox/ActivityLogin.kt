@@ -36,14 +36,10 @@ class ActivityLogin : AppCompatActivity(),Retro.comeback {
             }
         }
         timer.start()
-
-
     }
-
 
     override fun onSucces(obj: List<PojoData>) {
         prsnter = ActivityPresenter(this,obj)
     }
-
 
 }

@@ -20,20 +20,18 @@ class RcvAdapter(ctx:AppCompatActivity, list:List<PojoData>): RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.setIsRecyclable(false)
+        //holder.setIsRecyclable(false)
         val current = cList.get(position)
         var adapter = ViewPagerAdapter(current,mCtx.supportFragmentManager)
 
       //  holder.viewpager.adapter = adapter
         holder.carousel_title.text=current.title
         holder.viewpager.adapter=adapter
-
-
     }
 
     override fun getItemViewType(position: Int): Int {
         val current = cList.get(position)
-        if (current.type.trim().toLowerCase().equals("thumb"))
+        if (current.type.trim().lowercase().equals("thumb"))
             return R.layout.rcv_item_thumb
         else
             return R.layout.rcv_item

@@ -5,7 +5,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import leos.toolbox.retro.PojoData
 
-class ViewPagerAdapter(obj:PojoData,fm:FragmentManager) : FragmentStatePagerAdapter(fm) {
+class ViewPagerAdapter(obj:PojoData,fm:FragmentManager) : FragmentStatePagerAdapter(fm
+) {
     var theObj=obj
     var type=theObj.type
 
